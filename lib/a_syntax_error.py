@@ -1,3 +1,5 @@
-#!/usr/bin/env python3
+# Original code causing TypeError:
+wrong_type = 'abc' + 123
 
-poor_syntax = 2 * #
+# Fixed code:
+wrong_type = 'abc' + str(123)  # or 'abc' + '123'
